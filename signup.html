@@ -3,72 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | Luminous</title>
+    <title>Sign Up | AIML Lab</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow"></div>
-
     <nav>
-        <a href="index.html" class="logo">Luminous</a>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z"/><path d="M12 12L2.1 12"/><path d="M12 12L19.07 4.93"/>
+                </svg>
+            </div>
+            <span>AIML Lab</span>
+        </a>
+
         <div class="nav-links">
-            <a href="#">Product</a>
-            <a href="#">Architects</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
     <div class="auth-container">
-        <div class="auth-header">
-            <span class="portal-tag">Onboarding</span>
-            <h1>Establish your <span>account.</span></h1>
-        </div>
-
         <div class="auth-card">
-            <form class="auth-form">
+            <h2>Create Account</h2>
+            <p>Join the community of AI enthusiasts.</p>
+            <form>
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <div class="input-wrapper">
-                        <i data-lucide="user" class="input-icon"></i>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
+                    <input type="text" id="name" placeholder="John Doe" required>
                 </div>
-
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <div class="input-wrapper">
-                        <i data-lucide="at-sign" class="input-icon"></i>
-                        <input type="email" id="email" name="email" placeholder="name@company.com" required>
-                    </div>
+                    <input type="email" id="email" placeholder="name@company.com" required>
                 </div>
-                
                 <div class="form-group">
-                    <label for="password">Security Key</label>
-                    <div class="input-wrapper">
-                        <i data-lucide="lock" class="input-icon"></i>
-                        <input type="password" id="password" name="password" placeholder="••••••••" required>
-                        <i data-lucide="eye" class="toggle-password" id="togglePassword"></i>
-                    </div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
                 </div>
-
-                <button type="submit" class="btn auth-btn">
-                    Create Workspace
-                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
-                </button>
+                <button type="submit" class="btn btn-primary auth-btn">Sign Up</button>
             </form>
-
             <div class="auth-footer">
-                Already part of the architecture? <a href="login.html">Sign in here</a>
+                Already have an account? <a href="login.html">Login</a>
             </div>
         </div>
     </div>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>

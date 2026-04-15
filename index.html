@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminous | Premium AI Workspace</title>
+    <title>AIML Lab | Interactive Learning Platform</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Lucide Icons (via CDN) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="bg-glow"></div>
-
     <nav>
-        <a href="index.html" class="logo">Luminous</a>
-        
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z"/><path d="M12 12L2.1 12"/><path d="M12 12L19.07 4.93"/>
+                </svg>
+            </div>
+            <span>AIML Lab</span>
+        </a>
+
         <div class="nav-links">
-            <a href="#">Product</a>
-            <a href="#">Architects</a>
+            <a href="learn.html">Learn</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="play.html">Play</a>
+            <a href="simulate.html">Simulate</a>
+            <a href="contact.html">Contact</a>
             <div class="nav-auth">
                 <a href="login.html" class="btn btn-outline">Login</a>
                 <a href="signup.html" class="btn btn-primary">Sign Up</a>
@@ -35,38 +40,34 @@
     </nav>
 
     <header class="hero">
-        <h1>Architecting the <span style="background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Future.</span></h1>
-        <p>A premium workspace for AI-driven development. Experience the next generation of machine learning infrastructure.</p>
-        <a href="signup.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Begin Exploration</a>
+        <h1>Learn AI/ML the Fun Way</h1>
+        <p>Master the future of technology through interactive lessons, challenging quizzes, and immersive simulations. Start your journey into the world of Artificial Intelligence today.</p>
+        <a href="learn.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Get Started for Free</a>
     </header>
 
     <section class="features">
-        <a href="#" class="feature-card">
-            <i data-lucide="cpu"></i>
-            <h3>Neural Core</h3>
-            <p>High-performance inference engine for real-time architectural simulations.</p>
+        <a href="learn.html" class="card">
+            <div class="card-icon">📚</div>
+            <h3>Learn Concepts</h3>
+            <p>Dive deep into neural networks, regression, and deep learning with our structured curriculum.</p>
         </a>
-        <a href="#" class="feature-card">
-            <i data-lucide="shield-check"></i>
-            <h3>Secure Vault</h3>
-            <p>Enterprise-grade security for your proprietary machine learning models.</p>
+        <a href="quiz.html" class="card">
+            <div class="card-icon">🧠</div>
+            <h3>Practice Quiz</h3>
+            <p>Test your knowledge with adaptive quizzes designed to reinforce your learning.</p>
         </a>
-        <a href="#" class="feature-card">
-            <i data-lucide="zap"></i>
-            <h3>Rapid Flow</h3>
-            <p>Accelerated data pipelines designed for massive-scale training operations.</p>
+        <a href="play.html" class="card">
+            <div class="card-icon">🎮</div>
+            <h3>Play Games</h3>
+            <p>Engage with mini-games that make complex algorithms easy to understand.</p>
         </a>
-        <a href="#" class="feature-card">
-            <i data-lucide="box"></i>
-            <h3>Model Sandbox</h3>
-            <p>Isolated environments for testing and validating experimental architectures.</p>
+        <a href="simulate.html" class="card">
+            <div class="card-icon">🧪</div>
+            <h3>AI Simulation</h3>
+            <p>Experiment with real-time AI models and see how they process data in our sandbox.</p>
         </a>
     </section>
 
     <script src="script.js"></script>
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
 </body>
 </html>
