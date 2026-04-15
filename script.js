@@ -5,7 +5,7 @@
 // --- Authentication & Route Protection (Run immediately to prevent flash) ---
 const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 const username = localStorage.getItem('username') || 'User';
-const protectedPages = ['learn.html', 'quiz.html', 'mcq.html', 'coding.html', 'progress.html', 'dashboard.html', 'beginner.html', 'intermediate.html', 'expert.html', 'play.html', 'simulate.html'];
+const protectedPages = ['learn.html', 'mcq.html', 'coding.html', 'progress.html', 'dashboard.html', 'beginner.html', 'intermediate.html', 'expert.html', 'play.html', 'simulate.html'];
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 // Home Page Restriction: If logged in, index.html -> dashboard.html
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Clear existing links to rebuild for logged-in state
             navLinksContainer.innerHTML = `
                 <a href="dashboard.html">Dashboard</a>
+                <a href="mcq.html">Quiz</a>
                 <a href="simulate.html">Simulate</a>
                 <a href="play.html">Play</a>
                 <a href="contact.html">Contact</a>
