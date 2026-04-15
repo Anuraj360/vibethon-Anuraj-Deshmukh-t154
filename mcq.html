@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz | AIML Lab</title>
+    <title>MCQ Quiz | AIML Lab</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -39,30 +39,37 @@
     </nav>
 
     <div class="page-header">
-        <h1>Assessment Dashboard</h1>
-        <p>Track your learning progress and earn badges.</p>
+        <h1>MCQ Assessment</h1>
+        <p>Test your knowledge of Machine Learning fundamentals.</p>
     </div>
 
     <div class="content-section">
-        <div class="features" style="padding: 0;">
-            <a href="mcq.html" class="card">
-                <div class="card-icon">📝</div>
-                <h3>MCQ Quiz</h3>
-                <p>Test your theoretical knowledge of AI/ML concepts.</p>
-                <span class="btn btn-primary" style="margin-top: 1rem;">Start Quiz</span>
-            </a>
-            <a href="coding.html" class="card">
-                <div class="card-icon">💻</div>
-                <h3>Coding Practice</h3>
-                <p>Solve real-world coding problems using Python/JS.</p>
-                <span class="btn btn-primary" style="margin-top: 1rem;">Start Coding</span>
-            </a>
-            <a href="progress.html" class="card">
-                <div class="card-icon">📈</div>
-                <h3>View Progress</h3>
-                <p>Detailed breakdown of your learning achievements.</p>
-                <span class="btn btn-outline" style="margin-top: 1rem;">View Stats</span>
-            </a>
+        <div id="quiz-area" class="quiz-container">
+            <div class="card">
+                <div id="question-container">
+                    <p class="question-text" id="question">Loading question...</p>
+                    <div class="options-grid" id="options">
+                        <!-- Options will be injected here -->
+                    </div>
+                </div>
+                
+                <div class="quiz-footer">
+                    <span class="progress-text" id="progress">Question 1 of 7</span>
+                    <button class="btn btn-primary" id="next-btn" disabled>Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-area" class="quiz-container" style="display: none;">
+            <div class="card result-card">
+                <h2>Quiz Completed!</h2>
+                <div class="result-score" id="score-display">0/7</div>
+                <p class="result-message" id="result-message">Great effort!</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="location.reload()">Restart Quiz</button>
+                    <a href="quiz.html" class="btn btn-outline">Back to Dashboard</a>
+                </div>
+            </div>
         </div>
     </div>
 

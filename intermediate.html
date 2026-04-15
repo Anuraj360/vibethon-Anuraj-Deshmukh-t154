@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Level | AIML Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z"/><path d="M12 12L2.1 12"/><path d="M12 12L19.07 4.93"/>
+                </svg>
+            </div>
+            <span>AIML Lab</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="learn.html" style="color: var(--text-main);">Learn</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="play.html">Play</a>
+            <a href="simulate.html">Simulate</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <span class="level-badge badge-intermediate">Level 2</span>
+        <h1>Intermediate: The ML Process</h1>
+        <p>Understanding how models are built and validated.</p>
+    </div>
+
+    <div class="content-section" style="text-align: left;">
+        <div class="quiz-container">
+            <!-- Section 1 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">⚙️ How it Works</h2>
+                <p>Machine Learning isn't just one step. It's a lifecycle. We start with raw data and end with a model that can predict the future.</p>
+                
+                <div class="diagram-container">
+                    <div class="diagram-box">Data</div>
+                    <div class="diagram-arrow">➜</div>
+                    <div class="diagram-box">Train</div>
+                    <div class="diagram-arrow">➜</div>
+                    <div class="diagram-box">Test</div>
+                    <div class="diagram-arrow">➜</div>
+                    <div class="diagram-box" style="border-color: var(--accent-secondary);">Predict</div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">📊 Training vs Testing</h2>
+                <p>We never use all our data for training. We split it:</p>
+                <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-muted);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Training Set (80%):</strong> The data the model uses to learn patterns.</li>
+                    <li><strong>Testing Set (20%):</strong> The "final exam" to see how well the model performs on new data.</li>
+                </ul>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">⚠️ Overfitting</h2>
+                <p>Overfitting happens when a model learns the training data <span class="keyword">too well</span>—including the noise and random errors. It becomes like a student who memorizes the textbook but can't solve a new problem.</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 8px; border: 1px solid rgba(239, 68, 68, 0.2);">
+                    <p style="font-size: 0.9rem; color: #ef4444;"><strong>Result:</strong> High accuracy on training data, but poor performance on real-world data.</p>
+                </div>
+            </section>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                <a href="beginner.html" class="btn btn-outline">← Beginner</a>
+                <a href="expert.html" class="btn btn-primary">Next: Expert Level ➜</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

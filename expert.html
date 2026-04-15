@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Level | AIML Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z"/><path d="M12 12L2.1 12"/><path d="M12 12L19.07 4.93"/>
+                </svg>
+            </div>
+            <span>AIML Lab</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="learn.html" style="color: var(--text-main);">Learn</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="play.html">Play</a>
+            <a href="simulate.html">Simulate</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <span class="level-badge badge-expert">Level 3</span>
+        <h1>Expert: Advanced Concepts</h1>
+        <p>Mastering model evaluation and optimization.</p>
+    </div>
+
+    <div class="content-section" style="text-align: left;">
+        <div class="quiz-container">
+            <!-- Section 1 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">🎯 Model Evaluation</h2>
+                <p>How do we know if a model is good? We use metrics like <span class="keyword">Accuracy</span>. Accuracy is the percentage of correct predictions out of the total predictions made.</p>
+                <div style="margin-top: 1rem; font-family: monospace; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; text-align: center;">
+                    Accuracy = (Correct Predictions) / (Total Predictions)
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">⚖️ Bias vs Variance</h2>
+                <p>This is the fundamental trade-off in Machine Learning. Finding the "Sweet Spot" is the goal of every data scientist.</p>
+                
+                <div class="comparison-grid">
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                        <h4 style="color: #22c55e; margin-bottom: 0.5rem;">High Bias</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Underfitting:</strong> The model is too simple. It misses the patterns in the data entirely.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                        <h4 style="color: #ef4444; margin-bottom: 0.5rem;">High Variance</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Overfitting:</strong> The model is too complex. It fits the noise instead of the signal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">🚀 Expert Applications</h2>
+                <p>At this level, ML powers complex systems like:</p>
+                <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-muted);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Autonomous Vehicles:</strong> Real-time object detection and path planning.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Medical Diagnosis:</strong> Identifying diseases from X-rays with higher precision than humans.</li>
+                    <li><strong>Algorithmic Trading:</strong> Predicting stock market fluctuations in milliseconds.</li>
+                </ul>
+            </section>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                <a href="intermediate.html" class="btn btn-outline">← Intermediate</a>
+                <a href="quiz.html" class="btn btn-primary">Take the Quiz!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

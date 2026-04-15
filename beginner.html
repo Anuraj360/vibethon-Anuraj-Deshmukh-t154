@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Level | AIML Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z"/><path d="M12 12L2.1 12"/><path d="M12 12L19.07 4.93"/>
+                </svg>
+            </div>
+            <span>AIML Lab</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="learn.html" style="color: var(--text-main);">Learn</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="play.html">Play</a>
+            <a href="simulate.html">Simulate</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <span class="level-badge badge-beginner">Level 1</span>
+        <h1>Beginner: What is ML?</h1>
+        <p>Building the foundation of Artificial Intelligence.</p>
+    </div>
+
+    <div class="content-section" style="text-align: left;">
+        <div class="quiz-container">
+            <!-- Section 1 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">🤖 The Simple Explanation</h2>
+                <p>Imagine you want to teach a computer to identify a fruit. Instead of writing rules like "if it's red and round, it's an apple," you show the computer thousands of pictures of apples. The computer learns the patterns itself. That's <span class="keyword">Machine Learning</span>.</p>
+                
+                <div style="margin-top: 1.5rem; color: var(--text-muted);">
+                    <p><strong>Real-world examples:</strong></p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li><strong>Spam Filters:</strong> Learning which emails you delete to protect your inbox.</li>
+                        <li><strong>Netflix:</strong> Learning your taste to suggest your next favorite show.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Visual Aid -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h3 style="text-align: center; margin-bottom: 1.5rem;">The ML Workflow</h3>
+                <div class="diagram-container">
+                    <div class="diagram-box">Input Data</div>
+                    <div class="diagram-arrow">➜</div>
+                    <div class="diagram-box" style="border-color: var(--accent-secondary);">ML Model</div>
+                    <div class="diagram-arrow">➜</div>
+                    <div class="diagram-box">Output</div>
+                </div>
+                <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted);">Data goes in, the model processes it, and a prediction comes out.</p>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">🧩 Types of Learning</h2>
+                <div class="comparison-grid">
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                        <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Supervised</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Learning with a "teacher" using labeled data (e.g., photos labeled "Cat").</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                        <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Unsupervised</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Learning without a teacher, finding hidden patterns in unlabeled data.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="intermediate.html" class="btn btn-primary">Next: Intermediate Level ➜</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

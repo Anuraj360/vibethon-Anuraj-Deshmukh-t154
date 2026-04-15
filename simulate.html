@@ -44,10 +44,24 @@
     </div>
 
     <div class="content-section">
-        <div class="placeholder-content">
-            <h2>Sandbox Environment</h2>
-            <p style="margin-top: 1rem;">Experiment with our interactive simulations. Visualize how a Convolutional Neural Network sees an image or how a Decision Tree splits data.</p>
-            <button class="btn btn-outline" style="margin-top: 2rem;">Launch Sandbox</button>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+            <div class="card" style="text-align: left;">
+                <h3>Scenario: Image Classification</h3>
+                <p style="margin: 1rem 0; color: var(--text-muted);">Visualize how a Convolutional Neural Network (CNN) processes an image through various layers to identify objects.</p>
+                <div style="background: rgba(0,0,0,0.2); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--glass-border); margin-bottom: 1.5rem;">
+                    <span style="color: var(--text-muted);">[ Interactive Visualization Area ]</span>
+                </div>
+                <button id="launch-sim" class="btn btn-primary">Launch Simulation</button>
+            </div>
+
+            <div class="card" style="text-align: left;">
+                <h3>Scenario: Sentiment Analysis</h3>
+                <p style="margin: 1rem 0; color: var(--text-muted);">See how a Recurrent Neural Network (RNN) analyzes the emotional tone of a sentence word by word.</p>
+                <div class="form-group">
+                    <input type="text" placeholder="Type a sentence to analyze..." style="width: 100%;">
+                </div>
+                <button class="btn btn-outline" style="margin-top: 1rem;">Analyze Sentiment</button>
+            </div>
         </div>
     </div>
 
