@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Luminous</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav>
+        <a href="index.html" class="logo">Luminous</a>
+        <div class="nav-links">
+            <a href="#">Product</a>
+            <a href="#">Architects</a>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <span class="portal-tag">Access Portal</span>
+            <h1>Resume your <span>creation.</span></h1>
+        </div>
+
+        <div class="auth-card">
+            <div class="error-message" id="login-error">Invalid credentials. Access denied.</div>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="at-sign" class="input-icon"></i>
+                        <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <a href="#" class="forgot-link">Forgot?</a>
+                    <label for="password">Security Key</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="lock" class="input-icon"></i>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <i data-lucide="eye" class="toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn auth-btn">
+                    Sign In to Workspace
+                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                New to the architecture? <a href="signup.html">Establish account</a>
+            </div>
+        </div>
+
+        <div class="env-badges">
+            <div class="badge">Cyber_Stark</div>
+            <div class="badge">Neo_Flow</div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
